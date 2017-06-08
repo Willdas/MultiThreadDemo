@@ -1,0 +1,11 @@
+线程的优先级
+	线程可以划分为优先级，优先级较高的线程得到的CPU资源较多，也就是CPU优先执行优先级较高的线程对象中的任务
+    设置优先级有助于帮助"线程规划器" 确定在下一次选择哪一个线程来优先执行
+    设置线程的优先级使用setPriority()方法
+    
+在JDK中，线程优先级分为1—10 这10个级别，如果小于1或大于10，则JDK抛出异常throw new IllegelArgumentException()。
+
+JDK 中 使用 3个变量来定义优先级的值，代码如下：
+	public final static int MIN_PRIORITY = 1;
+	public final static int NORM_PRIORITY = 5;
+	public final static int MAX_PRIORITY = 10;
